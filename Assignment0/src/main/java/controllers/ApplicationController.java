@@ -32,13 +32,14 @@ public class ApplicationController {
         return Results.html();
 
     }
-    
+
     public Result ranSuccessfully() {
 
         RanSuccessfullyList rsf = new RanSuccessfullyList();
         //This is a sample. You can copy and modify it for your needs.
         rsf.addPerson(new Person("Michael Hilton","MichaelHilton","Mac"));
         rsf.addPerson(new Person("Taylor Kirkpatrick","kirkpatt","Windows"));
+        rsf.addPerson(new Person("Yipeng Song","songyip","Windows"));
         rsf.addPerson(new Person("Natalie Suderman", "suderman","Windows"));
         rsf.addPerson(new Person("Cody Holliday","hollidac","Windows"));
         rsf.addPerson(new Person("Wenbo Hou", "HouPoc", "Windows"));
@@ -53,7 +54,7 @@ public class ApplicationController {
         rsf.addPerson(new Person("Paul Minner", "paublo96", "Linux"));
         rsf.addPerson(new Person("Cameron McDonnell", "mcdoncam", "Windows"));
 
-
+        
         return Results.json().render(rsf);
 
     }
