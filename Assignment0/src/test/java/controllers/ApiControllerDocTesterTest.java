@@ -17,16 +17,11 @@
 package controllers;
 
 
-import Model.Person;
 import Model.RanSuccessfullyList;
-import org.junit.Test;
-
 import ninja.NinjaDocTester;
 import org.doctester.testbrowser.Request;
 import org.doctester.testbrowser.Response;
-import org.hamcrest.CoreMatchers;
-
-import java.util.ArrayList;
+import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.junit.Assert.assertEquals;
@@ -58,7 +53,7 @@ public class ApiControllerDocTesterTest extends NinjaDocTester {
         RanSuccessfullyList ranSuccesfully = response.payloadJsonAs(RanSuccessfullyList.class);
 
 
-        assertEquals(16,ranSuccesfully.getPersons().size());
+        assertEquals(17,ranSuccesfully.getPersons().size());
 
 
     }
